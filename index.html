@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ana Luiza | Nail Designer - Agendamento Online</title>
+  <meta name="description" content="Espaço exclusivo de nail design. Especialista em fibra de vidro, banho de gel e esmaltação em gel com acabamento natural e durabilidade.">
+
+  <!-- Fontes do Google: Cormorant Garamond (Serifada Luxo) e Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       CABECALHO / NAVBAR (Fiel ao cabeçalho da imagem de referência)
+       ========================================================================== -->
+  <header class="header">
+    <div class="header-container">
+      <a href="#" class="logo">
+        <span class="logo-name">Ana Luiza</span>
+        <span class="logo-sub">Nail Designer</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#valores" class="nav-link">Valores</a></li>
+          <li><a href="#trabalhos" class="nav-link">Trabalhos</a></li>
+          <li><a href="#agendar" class="nav-link">Agendar</a></li>
+          <li><a href="#atendimento" class="nav-link">Atendimento</a></li>
+          <li><a href="#endereco" class="nav-link">Endereço</a></li>
+          <li>
+            <a href="#agendar" class="nav-cta-btn">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+              </svg>
+              Marcar Horário
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir menu de navegação">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         HERO SECTION (Reprodução Exata da Imagem: Moldura Circular com Círculos Dourados)
+         ========================================================================== -->
+    <section class="hero" id="inicio">
+      <div class="hero-glow"></div>
+
+      <div class="hero-content container">
+        <!-- Moldura circular com anéis dourados concêntricos -->
+        <div class="avatar-frame-wrapper">
+          <div class="avatar-outer-ring"></div>
+          <div class="avatar-mid-ring"></div>
+          <div class="avatar-circle">
+            <img 
+              src="assets/ana-luiza.jpg" 
+              alt="Foto de Ana Luiza - Nail Designer" 
+              class="avatar-img"
+              onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=700&q=80'"
+            >
+          </div>
+        </div>
+
+        <!-- Subtítulo exatamente como na imagem do usuário -->
+        <div class="hero-notice">
+          Atendimento somente com horário marcado
+        </div>
+
+        <div class="hero-actions">
+          <a href="#agendar" class="btn-primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="16" y1="2" x2="16" y2="6"></line>
+              <line x1="8" y1="2" x2="8" y2="6"></line>
+              <line x1="3" y1="10" x2="21" y2="10"></line>
+            </svg>
+            Agendar Agora
+          </a>
+          <a href="#valores" class="btn-secondary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+            </svg>
+            Conhecer Procedimentos
+          </a>
+        </div>
+
+        <!-- Selos de Confiança -->
+        <div class="hero-badges">
+          <div class="hero-badge-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+            </svg>
+            Fibra de Vidro Natural
+          </div>
+          <div class="hero-badge-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+            Materiais Autoclavados
+          </div>
+          <div class="hero-badge-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+            Pontualidade Garantida
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SEÇÃO VALORES (Cardápio de Serviços)
+         ========================================================================== -->
+    <section class="section section-alt" id="valores">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Cardápio de Procedimentos</span>
+          <h2 class="section-title">Valores & Serviços</h2>
+          <p class="section-desc">Procedimentos executados com produtos de linha premium internacional, foco em saúde ungueal e curvatura natural e resistente.</p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Card 1: Aplicação Fibra de Vidro (Destaque) -->
+          <div class="service-card featured">
+            <span class="service-badge">Mais Escolhido</span>
+            <div class="service-card-top">
+              <div>
+                <h3 class="service-title">Alongamento em Fibra</h3>
+                <div class="service-time">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                  Aprox. 2h00
+                </div>
+              </div>
+            </div>
+            <p class="service-desc">Aplicação completa fio a fio com curvatura C impecável, ponto de tensão harmônico e acabamento ultrafino.</p>
+            <ul class="service-includes">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Preparação e cutilagem russa
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Estruturação na fibra importada
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Esmaltação tradicional ou top coat brilho
+              </li>
+            </ul>
+            <div class="service-footer">
+              <div class="service-price-block">
+                <span class="price-label">Investimento</span>
+                <span class="price-value">R$ 160</span>
+              </div>
+              <button class="service-select-btn" data-service-id="fibra-aplicacao">
+                Agendar este
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 2: Manutenção Fibra de Vidro -->
+          <div class="service-card">
+            <div class="service-card-top">
+              <div>
+                <h3 class="service-title">Manutenção de Fibra</h3>
+                <div class="service-time">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                  Aprox. 1h30
+                </div>
+              </div>
+            </div>
+            <p class="service-desc">Nivelamento do crescimento, reposição estrutural de fibra, acerto de simetria e troca de esmaltação.</p>
+            <ul class="service-includes">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Cutilagem completa e alinhamento
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Reforço de ponto de tensão
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Finalização com óleo hidratante
+              </li>
+            </ul>
+            <div class="service-footer">
+              <div class="service-price-block">
+                <span class="price-label">Investimento</span>
+                <span class="price-value">R$ 110</span>
+              </div>
+              <button class="service-select-btn" data-service-id="fibra-manutencao">
+                Agendar este
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 3: Banho de Gel / Blindagem -->
+          <div class="service-card">
+            <div class="service-card-top">
+              <div>
+                <h3 class="service-title">Banho de Gel</h3>
+                <div class="service-time">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                  Aprox. 1h15
+                </div>
+              </div>
+            </div>
+            <p class="service-desc">Camada protetora sobre a sua unha natural para quem deseja deixar a unha crescer sem quebrar ou descamar.</p>
+            <ul class="service-includes">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Blindagem sem alteração no comprimento
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Brilho espelhado de longa duração
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Alta resistência mecânica
+              </li>
+            </ul>
+            <div class="service-footer">
+              <div class="service-price-block">
+                <span class="price-label">Investimento</span>
+                <span class="price-value">R$ 90</span>
+              </div>
+              <button class="service-select-btn" data-service-id="banho-gel">
+                Agendar este
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 4: Esmaltação em Gel -->
+          <div class="service-card">
+            <div class="service-card-top">
+              <div>
+                <h3 class="service-title">Esmaltação em Gel</h3>
+                <div class="service-time">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                  Aprox. 50min
+                </div>
+              </div>
+            </div>
+            <p class="service-desc">Secagem instantânea na cabine UV/LED. Unhas prontas e secas na hora, sem risco de borrar, durando até 25 dias.</p>
+            <ul class="service-includes">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Cutilagem e higienização
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Catálogo com mais de 80 cores
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Não descasca no dia a dia
+              </li>
+            </ul>
+            <div class="service-footer">
+              <div class="service-price-block">
+                <span class="price-label">Investimento</span>
+                <span class="price-value">R$ 75</span>
+              </div>
+              <button class="service-select-btn" data-service-id="esmaltacao-gel">
+                Agendar este
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 5: Nail Art & Decorações -->
+          <div class="service-card">
+            <div class="service-card-top">
+              <div>
+                <h3 class="service-title">Nail Art & Encapsulada</h3>
+                <div class="service-time">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                  Adicional 30min
+                </div>
+              </div>
+            </div>
+            <p class="service-desc">Francesinha reversa, babyboomer, folhas de ouro, glitter encapsulado ou decorações minimalistas personalizadas.</p>
+            <ul class="service-includes">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Decoração sob medida
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Técnicas modernas e sofisticadas
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Durabilidade durante todo o ciclo
+              </li>
+            </ul>
+            <div class="service-footer">
+              <div class="service-price-block">
+                <span class="price-label">A partir de</span>
+                <span class="price-value">R$ 35</span>
+              </div>
+              <button class="service-select-btn" data-service-id="nail-art">
+                Agendar este
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 6: Spa dos Pés Premium -->
+          <div class="service-card">
+            <div class="service-card-top">
+              <div>
+                <h3 class="service-title">Spa dos Pés Completo</h3>
+                <div class="service-time">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                  Aprox. 1h00
+                </div>
+              </div>
+            </div>
+            <p class="service-desc">Tratamento de renovação e relaxamento profundo, remoção de calosidades, esfoliação com sais e massagem hidratante.</p>
+            <ul class="service-includes">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Imersão relaxante em água termal
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Esfoliação mecânica e parafina fria
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Cutilagem e esmaltação perfeita
+              </li>
+            </ul>
+            <div class="service-footer">
+              <div class="service-price-block">
+                <span class="price-label">Investimento</span>
+                <span class="price-value">R$ 80</span>
+              </div>
+              <button class="service-select-btn" data-service-id="spa-pes">
+                Agendar este
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SEÇÃO TRABALHOS (Portfólio com Imagens de Alto Padrão)
+         ========================================================================== -->
+    <section class="section" id="trabalhos">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Portfólio Selecionado</span>
+          <h2 class="section-title">Galeria de Trabalhos</h2>
+          <p class="section-desc">Acabamento com simetria, cutículas contínuas e polimento espelhado. Clique em qualquer foto para ampliar.</p>
+        </div>
+
+        <!-- Filtros do Portfólio -->
+        <div class="portfolio-filters">
+          <button class="filter-btn active" data-filter="all">Todas</button>
+          <button class="filter-btn" data-filter="fibra">Fibra de Vidro</button>
+          <button class="filter-btn" data-filter="nailart">Nail Art & Francesinha</button>
+          <button class="filter-btn" data-filter="gel">Esmaltação em Gel</button>
+          <button class="filter-btn" data-filter="banho">Banho de Gel</button>
+        </div>
+
+        <!-- Grid de Fotos com Aspect Ratio Elegante -->
+        <div class="portfolio-grid">
+          <!-- Item 1 -->
+          <div class="portfolio-item" data-category="fibra">
+            <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?auto=format&fit=crop&w=700&q=80" alt="Alongamento Almond com acabamento natural">
+            <div class="portfolio-overlay">
+              <span class="portfolio-tag">Fibra de Vidro</span>
+              <h4 class="portfolio-title">Almond Nude Acetinado</h4>
+            </div>
+            <div class="portfolio-zoom-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="portfolio-item" data-category="nailart">
+            <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=700&q=80" alt="Francesinha moderna em formato quadrado">
+            <div class="portfolio-overlay">
+              <span class="portfolio-tag">Nail Art</span>
+              <h4 class="portfolio-title">Francesinha Reversa Luxo</h4>
+            </div>
+            <div class="portfolio-zoom-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="portfolio-item" data-category="fibra">
+            <img src="https://images.unsplash.com/photo-1519014816548-bf7851504fdd?auto=format&fit=crop&w=700&q=80" alt="Alongamento Bailarina com brilho">
+            <div class="portfolio-overlay">
+              <span class="portfolio-tag">Fibra de Vidro</span>
+              <h4 class="portfolio-title">Bailarina Babyboomer</h4>
+            </div>
+            <div class="portfolio-zoom-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="portfolio-item" data-category="gel">
+            <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=700&q=80" alt="Esmaltação em Gel Vermelho Carmim">
+            <div class="portfolio-overlay">
+              <span class="portfolio-tag">Esmaltação em Gel</span>
+              <h4 class="portfolio-title">Vermelho Real Espelhado</h4>
+            </div>
+            <div class="portfolio-zoom-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="portfolio-item" data-category="nailart">
+            <img src="https://images.unsplash.com/photo-1599839575945-a9e5af0c3fa5?auto=format&fit=crop&w=700&q=80" alt="Decoração delicada com folha de ouro">
+            <div class="portfolio-overlay">
+              <span class="portfolio-tag">Nail Art</span>
+              <h4 class="portfolio-title">Folhas de Ouro & Nude</h4>
+            </div>
+            <div class="portfolio-zoom-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+            </div>
+          </div>
+
+          <!-- Item 6 -->
+          <div class="portfolio-item" data-category="banho">
+            <img src="https://images.unsplash.com/photo-1579895007421-2a1e0b5034c7?auto=format&fit=crop&w=700&q=80" alt="Banho de gel em unhas naturais quadradas">
+            <div class="portfolio-overlay">
+              <span class="portfolio-tag">Banho de Gel</span>
+              <h4 class="portfolio-title">Unhas Naturais Blindadas</h4>
+            </div>
+            <div class="portfolio-zoom-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SEÇÃO AGENDAR (Sistema Guiado em 4 Etapas com Envio para WhatsApp)
+         ========================================================================== -->
+    <section class="section section-alt" id="agendar">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Agendamento Fácil</span>
+          <h2 class="section-title">Reserve seu Horário</h2>
+          <p class="section-desc">Selecione o procedimento, formato e data desejados. O resumo será gerado e enviado diretamente para o WhatsApp do estúdio para confirmação.</p>
+        </div>
+
+        <div class="booking-wrapper">
+          <!-- Coluna Esquerda: Formulário Guiado por Passos -->
+          <div class="booking-form-area">
+            <!-- Barra de Etapas -->
+            <div class="booking-steps-bar">
+              <div class="step-indicator active" data-step="1">
+                <div class="step-number">1</div>
+                <span class="step-label">Procedimento</span>
+              </div>
+              <div class="step-indicator" data-step="2">
+                <div class="step-number">2</div>
+                <span class="step-label">Formato</span>
+              </div>
+              <div class="step-indicator" data-step="3">
+                <div class="step-number">3</div>
+                <span class="step-label">Data & Hora</span>
+              </div>
+              <div class="step-indicator" data-step="4">
+                <div class="step-number">4</div>
+                <span class="step-label">Seus Dados</span>
+              </div>
+            </div>
+
+            <!-- PASSO 1: Escolha do Serviço -->
+            <div class="form-step active" id="step-1">
+              <h3 class="step-heading">Qual serviço deseja realizar?</h3>
+              <p class="step-subheading">Escolha o procedimento principal para seu atendimento.</p>
+
+              <div class="service-options">
+                <div class="service-radio-card selected" data-id="fibra-aplicacao" data-name="Alongamento em Fibra de Vidro" data-price="160" data-duration="2h00">
+                  <div class="service-radio-left">
+                    <div class="custom-radio"></div>
+                    <div>
+                      <div class="service-info-title">Alongamento em Fibra de Vidro</div>
+                      <div class="service-info-meta">Aplicação completa • Duração: ~ 2h00</div>
+                    </div>
+                  </div>
+                  <div class="service-info-price">R$ 160</div>
+                </div>
+
+                <div class="service-radio-card" data-id="fibra-manutencao" data-name="Manutenção de Fibra de Vidro" data-price="110" data-duration="1h30">
+                  <div class="service-radio-left">
+                    <div class="custom-radio"></div>
+                    <div>
+                      <div class="service-info-title">Manutenção de Fibra</div>
+                      <div class="service-info-meta">Nivelamento e reposição • Duração: ~ 1h30</div>
+                    </div>
+                  </div>
+                  <div class="service-info-price">R$ 110</div>
+                </div>
+
+                <div class="service-radio-card" data-id="banho-gel" data-name="Banho de Gel / Blindagem" data-price="90" data-duration="1h15">
+                  <div class="service-radio-left">
+                    <div class="custom-radio"></div>
+                    <div>
+                      <div class="service-info-title">Banho de Gel / Blindagem</div>
+                      <div class="service-info-meta">Fortalecimento da unha natural • Duração: ~ 1h15</div>
+                    </div>
+                  </div>
+                  <div class="service-info-price">R$ 90</div>
+                </div>
+
+                <div class="service-radio-card" data-id="esmaltacao-gel" data-name="Esmaltação em Gel" data-price="75" data-duration="50min">
+                  <div class="service-radio-left">
+                    <div class="custom-radio"></div>
+                    <div>
+                      <div class="service-info-title">Esmaltação em Gel</div>
+                      <div class="service-info-meta">Cor e brilho por até 25 dias • Duração: ~ 50min</div>
+                    </div>
+                  </div>
+                  <div class="service-info-price">R$ 75</div>
+                </div>
+
+                <div class="service-radio-card" data-id="spa-pes" data-name="Spa dos Pés Completo" data-price="80" data-duration="1h00">
+                  <div class="service-radio-left">
+                    <div class="custom-radio"></div>
+                    <div>
+                      <div class="service-info-title">Spa dos Pés Completo</div>
+                      <div class="service-info-meta">Esfoliação, hidratação e cutícula • Duração: ~ 1h00</div>
+                    </div>
+                  </div>
+                  <div class="service-info-price">R$ 80</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- PASSO 2: Formato da Unha -->
+            <div class="form-step" id="step-2">
+              <h3 class="step-heading">Escolha o Formato da Unha</h3>
+              <p class="step-subheading">Selecione o estilo que combina com a sua mão.</p>
+
+              <div class="shapes-grid">
+                <div class="shape-item selected" data-shape="Almond">
+                  <svg class="shape-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.8">
+                    <path d="M12 2C8 9 7 14 7 17a5 5 0 0 0 10 0c0-3-1-8-5-15z"></path>
+                  </svg>
+                  <span class="shape-name">Almond</span>
+                </div>
+
+                <div class="shape-item" data-shape="Quadrada">
+                  <svg class="shape-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.8">
+                    <rect x="6" y="4" width="12" height="16" rx="1"></rect>
+                  </svg>
+                  <span class="shape-name">Quadrada</span>
+                </div>
+
+                <div class="shape-item" data-shape="Bailarina">
+                  <svg class="shape-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.8">
+                    <path d="M8 4h8l-2 16h-4z"></path>
+                  </svg>
+                  <span class="shape-name">Bailarina</span>
+                </div>
+
+                <div class="shape-item" data-shape="Stiletto">
+                  <svg class="shape-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.8">
+                    <path d="M12 2L6 20h12z"></path>
+                  </svg>
+                  <span class="shape-name">Stiletto</span>
+                </div>
+
+                <div class="shape-item" data-shape="Oval">
+                  <svg class="shape-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.8">
+                    <ellipse cx="12" cy="12" rx="6" ry="9"></ellipse>
+                  </svg>
+                  <span class="shape-name">Oval</span>
+                </div>
+
+                <div class="shape-item" data-shape="Redonda Curta">
+                  <svg class="shape-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.8">
+                    <circle cx="12" cy="12" r="7"></circle>
+                  </svg>
+                  <span class="shape-name">Redonda</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- PASSO 3: Data e Horário -->
+            <div class="form-step" id="step-3">
+              <h3 class="step-heading">Escolha a Data e Horário</h3>
+              <p class="step-subheading">Atendimento de terça a sábado nos horários disponíveis.</p>
+
+              <div class="date-selector-wrapper">
+                <label class="form-label">Selecione o Dia:</label>
+                <div class="calendar-days-row" id="calendarDaysRow">
+                  <!-- Gerado dinamicamente via JavaScript -->
+                </div>
+              </div>
+
+              <div>
+                <label class="form-label">Horários Disponíveis:</label>
+                <div class="time-slots-grid">
+                  <div class="time-slot" data-time="09:00">09:00</div>
+                  <div class="time-slot" data-time="11:00">11:00</div>
+                  <div class="time-slot selected" data-time="13:30">13:30</div>
+                  <div class="time-slot" data-time="15:30">15:30</div>
+                  <div class="time-slot" data-time="17:30">17:30</div>
+                  <div class="time-slot" data-time="19:00">19:00</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- PASSO 4: Dados da Cliente -->
+            <div class="form-step" id="step-4">
+              <h3 class="step-heading">Seus Dados de Contato</h3>
+              <p class="step-subheading">Para que a Ana Luiza possa confirmar o seu horário.</p>
+
+              <div class="form-group">
+                <label class="form-label" for="clientName">Seu Nome Completo:</label>
+                <input type="text" id="clientName" class="form-input" placeholder="Ex: Camila Ferreira" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="clientPhone">Seu WhatsApp com DDD:</label>
+                <input type="tel" id="clientPhone" class="form-input" placeholder="(31) 99999-9999" maxlength="15" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="clientNotes">Observações ou Decoração desejada (Opcional):</label>
+                <input type="text" id="clientNotes" class="form-input" placeholder="Ex: Gostaria de francesinha reversa ou tenho unhas roídas">
+              </div>
+            </div>
+
+            <!-- Botões de Navegação -->
+            <div class="form-nav-buttons">
+              <button class="btn-form-prev" id="btnPrevStep" style="visibility: hidden;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                Voltar
+              </button>
+              <button class="btn-form-next" id="btnNextStep">
+                Continuar
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Coluna Direita: Resumo do Agendamento (Ticket de Luxo) -->
+          <div class="booking-summary-sidebar">
+            <h3 class="summary-title">Resumo do Horário</h3>
+            <p class="summary-subtitle">Confira os detalhes da sua reserva</p>
+
+            <div class="ticket-box">
+              <div class="ticket-row">
+                <span class="ticket-label">Procedimento</span>
+                <span class="ticket-value" id="ticketService">Alongamento em Fibra</span>
+              </div>
+              <div class="ticket-row">
+                <span class="ticket-label">Duração Prevista</span>
+                <span class="ticket-value" id="ticketDuration">2h00</span>
+              </div>
+              <div class="ticket-row">
+                <span class="ticket-label">Formato</span>
+                <span class="ticket-value" id="ticketShape">Almond</span>
+              </div>
+              <div class="ticket-row">
+                <span class="ticket-label">Data & Horário</span>
+                <span class="ticket-value" id="ticketDateTime">Carregando...</span>
+              </div>
+              <div class="ticket-row">
+                <span class="ticket-label">Cliente</span>
+                <span class="ticket-value" id="ticketClient">A preencher</span>
+              </div>
+
+              <div class="ticket-divider"></div>
+
+              <div class="ticket-total-row">
+                <div>
+                  <span class="ticket-label" style="display:block;">Valor Estimado</span>
+                  <span style="font-size:0.75rem; color:var(--text-muted);">Pagamento no dia</span>
+                </div>
+                <div class="ticket-total-price" id="ticketTotal">R$ 160,00</div>
+              </div>
+            </div>
+
+            <button class="whatsapp-confirm-btn" id="btnConfirmWhatsApp">
+              <svg viewBox="0 0 24 24">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+              </svg>
+              Confirmar no WhatsApp
+            </button>
+
+            <p class="booking-guarantee-note">
+              Seu horário é pré-reservado instantaneamente. A confirmação final acontece direto no WhatsApp da Ana Luiza.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SEÇÃO ATENDIMENTO (Políticas, Cuidados e Biossegurança)
+         ========================================================================== -->
+    <section class="section" id="atendimento">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Transparência & Qualidade</span>
+          <h2 class="section-title">Orientações de Atendimento</h2>
+          <p class="section-desc">Para garantir pontualidade, higiene e a melhor experiência relaxante para cada cliente.</p>
+        </div>
+
+        <div class="policy-grid">
+          <!-- Card 1 -->
+          <div class="policy-card">
+            <div class="policy-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+            <h4 class="policy-title">Tolerância de 15 Minutos</h4>
+            <p class="policy-text">Trabalhamos rigorosamente com hora marcada. Atrasos superiores a 15 minutos podem requerer reagendamento para não prejudicar a próxima cliente.</p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="policy-card">
+            <div class="policy-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="5" width="20" height="14" rx="2"></rect>
+                <line x1="2" y1="10" x2="22" y2="10"></line>
+              </svg>
+            </div>
+            <h4 class="policy-title">Reserva com Sinal</h4>
+            <p class="policy-text">Para confirmar a vaga na agenda solicitamos um sinal de R$ 30,00 via PIX, valor que é integralmente abatido do serviço no dia do atendimento.</p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="policy-card">
+            <div class="policy-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <h4 class="policy-title">100% Biosseguro</h4>
+            <p class="policy-text">Todos os instrumentais metálicos passam por autoclave hospitalar com teste biológico. Lixas, palitos e toalhas são estritamente descartáveis.</p>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="policy-card">
+            <div class="policy-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+              </svg>
+            </div>
+            <h4 class="policy-title">Manutenção em Dia</h4>
+            <p class="policy-text">O intervalo ideal para manutenção de fibra de vidro é de 20 a 25 dias. Ultrapassar esse período sobrecarrega a unha natural e gera custo de recolocação.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SEÇÃO ENDEREÇO & ESPAÇO
+         ========================================================================== -->
+    <section class="section section-alt" id="endereco">
+      <div class="container">
+        <div class="location-card-container">
+          <!-- Informações de Contato -->
+          <div class="location-info">
+            <span class="section-tag">Venha nos Conhecer</span>
+            <h3 class="location-title">Nosso Espaço</h3>
+            <p class="location-desc">Ambiente climatizado, aconchegante, com café espresso, água saborizada e Wi-Fi para o seu momento de autocuidado.</p>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div class="info-text">
+                <strong>Localização</strong>
+                <span>Rua das Flores, 120 - Centro, Belo Oriente - MG</span>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+              </div>
+              <div class="info-text">
+                <strong>Horários de Funcionamento</strong>
+                <span>Terça a Sexta: 09h às 19h<br>Sábado: 08h às 17h (Domingo e Segunda: Fechado)</span>
+              </div>
+            </div>
+
+            <div class="location-buttons">
+              <a href="https://maps.google.com" target="_blank" class="btn-map">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"></polygon>
+                  <line x1="9" y1="3" x2="9" y2="18"></line>
+                  <line x1="15" y1="6" x2="15" y2="21"></line>
+                </svg>
+                Abrir no Google Maps
+              </a>
+              <a href="https://waze.com" target="_blank" class="btn-map">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+                </svg>
+                Abrir no Waze
+              </a>
+            </div>
+          </div>
+
+          <!-- Mapa Visual Estilizado -->
+          <div class="map-visual-placeholder">
+            <div class="map-pin-pulse">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <h4 style="font-family:var(--font-serif); font-size:1.4rem; margin-bottom:0.4rem;">Estúdio Ana Luiza</h4>
+            <p style="font-size:0.88rem; color:var(--text-secondary); max-width:320px;">Fácil estacionamento em frente ao estúdio, próximo aos principais pontos da cidade.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       RODAPÉ (Footer)
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="logo">
+          <span class="footer-logo-name">Ana Luiza</span>
+          <span class="footer-logo-sub">Nail Designer</span>
+        </div>
+
+        <div class="footer-social-links">
+          <a href="https://instagram.com" target="_blank" class="social-circle-btn" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+          <a href="#agendar" class="social-circle-btn" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Ana Luiza Nail Designer. Todos os direitos reservados.</p>
+        <p>Atendimento exclusivo com horário marcado.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal de Zoom de Fotos do Portfólio -->
+  <div class="photo-modal" id="photoModal">
+    <div class="photo-modal-content">
+      <button class="photo-modal-close" id="photoModalClose" aria-label="Fechar foto">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <img src="" alt="" class="photo-modal-img" id="photoModalImg">
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
